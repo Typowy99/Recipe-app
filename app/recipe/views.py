@@ -52,7 +52,7 @@ class RecipeViewSet(viewsets.ModelViewSet):
 
     def _params_to_ints(self, qs):
         """Convert a list of strings to integers."""
-        return [int(str_id) for str_id in qs.spli(',')]
+        return [int(str_id) for str_id in qs.split(',')]
 
     def get_queryset(self):
         """Retrieve recipes for authenticated user."""
